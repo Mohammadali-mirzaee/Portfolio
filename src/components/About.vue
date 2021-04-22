@@ -33,6 +33,137 @@
         <span> Download <span style="color:#be73ff">Resume</span> </span>
       </a>
 
+      <div class="skill">
+        <h1 class="about">My skills</h1>
+        <b-row>
+          <b-col>
+            <vue-ellipse-progress
+              :data="circles"
+              :progress="70"
+              :angle="-90"
+              :color="gradient"
+              :colorFill="colorFillGradient"
+              emptyColor="aliceblue"
+              :emptyColorFill="emptyColorFillGradient"
+              :size="200"
+              :thickness="4"
+              emptyThickness="1%"
+              lineMode="in 10"
+              :legend="true"
+              :legendValue="70"
+              legendClass="legend-custom-style"
+              dash="20 0.9"
+              animation="reverse 700 400"
+              :noData="false"
+              :loading="false"
+              fontColor="white"
+              :half="false"
+              :gap="5"
+              dot="10 blue"
+              fontSize="2rem"
+            >
+              <span slot="legend-value">%</span>
+              <p slot="legend-caption">JavaScript</p> </vue-ellipse-progress
+            ><img src="https://img.icons8.com/color/96/000000/javascript.png"
+          /></b-col>
+          <b-col>
+            <vue-ellipse-progress
+              :data="circles"
+              :progress="60"
+              :angle="-90"
+              :color="gradient"
+              :colorFill="colorFillGradient"
+              emptyColor="aliceblue"
+              :emptyColorFill="emptyColorFillGradient"
+              :size="200"
+              :thickness="4"
+              emptyThickness="1%"
+              lineMode="in 10"
+              :legend="true"
+              :legendValue="60"
+              legendClass="legend-custom-style"
+              dash="20 0.9"
+              animation="reverse 700 400"
+              :noData="false"
+              :loading="false"
+              fontColor="white"
+              :half="false"
+              :gap="5"
+              dot="10 blue"
+              fontSize="2rem"
+            >
+              <span slot="legend-value">%</span>
+              <p slot="legend-caption">Vue Js</p>
+            </vue-ellipse-progress>
+            <img src="https://img.icons8.com/color/96/000000/vue-js.png" />
+          </b-col>
+          <b-col>
+            <vue-ellipse-progress
+              :data="circles"
+              :progress="30"
+              :angle="-90"
+              :color="gradient"
+              :colorFill="colorFillGradient"
+              emptyColor="aliceblue"
+              :emptyColorFill="emptyColorFillGradient"
+              :size="200"
+              :thickness="4"
+              emptyThickness="1%"
+              lineMode="in 10"
+              :legend="true"
+              :legendValue="30"
+              legendClass="legend-custom-style"
+              dash="20 0.9"
+              animation="reverse 700 400"
+              :noData="false"
+              :loading="false"
+              fontColor="white"
+              :half="false"
+              :gap="5"
+              dot="10 blue"
+              fontSize="2rem"
+            >
+              <span slot="legend-value">%</span>
+
+              <p slot="legend-caption">Node Js</p>
+            </vue-ellipse-progress>
+            <img src="https://img.icons8.com/color/96/000000/nodejs.png" />
+          </b-col>
+          <b-col>
+            <vue-ellipse-progress
+              :data="circles"
+              :progress="80"
+              :angle="-90"
+              :color="gradient"
+              :colorFill="colorFillGradient"
+              emptyColor="aliceblue"
+              :emptyColorFill="emptyColorFillGradient"
+              :size="200"
+              :thickness="4"
+              emptyThickness="1%"
+              lineMode="in 10"
+              :legend="true"
+              :legendValue="80"
+              legendClass="legend-custom-style"
+              dash="20 0.9"
+              animation="reverse 700 400"
+              :noData="false"
+              :loading="false"
+              fontColor="white"
+              :half="false"
+              :gap="5"
+              dot="10 blue"
+              fontSize="2rem"
+            >
+              <span slot="legend-value">%</span>
+              <p slot="legend-caption">Html & Css</p>
+            </vue-ellipse-progress>
+            <img src="https://img.icons8.com/color/70/000000/html-5--v1.png" />
+            <img src="https://img.icons8.com/color/70/000000/css3.png" />
+          </b-col>
+        </b-row>
+      </div>
+
       <!--    <div class="skills">
         <h1>My skills</h1>
         <b-container class="bv-example-row">
@@ -67,7 +198,23 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      gradient: {
+        radial: false,
+        colors: [
+          {
+            color: "#be73ff",
+            offset: "0",
+            opacity: "1",
+          },
+          {
+            color: "blue",
+            offset: "100",
+            opacity: "0.6",
+          },
+        ],
+      },
+    };
   },
   methods: {
     test() {},
@@ -90,9 +237,10 @@ body {
 }
 .main {
   background: radial-gradient(circle, rgb(7, 7, 7) 0%, rgb(26, 7, 37) 100%);
+  color: aliceblue;
 
   min-width: 100vh;
-  min-height: 80vh;
+  min-height: 100vh;
   animation: fadebackground 6s infinite;
 }
 /* .text {
@@ -139,8 +287,12 @@ a {
   text-decoration: none;
 }
 
-.skills {
+.skill {
   font-family: "Oswald", sans-serif;
+  padding-top: 150px;
+  position: relative;
+  display: inline-block;
+  width: 100vh;
 }
 .vue {
   background-color: rgb(188, 189, 255);
