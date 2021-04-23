@@ -7,6 +7,7 @@
       <img src="https://media.giphy.com/media/26DoiqmYcxgFICb3G/giphy.gif" />
     </main>
     <About v-if="show" />
+    <Item />
     <footer class="footer">
       <div class="logo"></div>
     </footer>
@@ -17,9 +18,10 @@
 // @ is an alias to /src
 import textanimate from "../components/textanimate.vue";
 import About from "../components/About.vue";
+import Item from "../components/Item";
 
 export default {
-  components: { textanimate, About },
+  components: { textanimate, About, Item },
   data() {
     return {
       show: true,
@@ -62,7 +64,8 @@ img {
 }
 
 .footer {
-  background-color: rgb(171, 185, 245);
+  background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(32, 13, 44) 100%);
+
   padding: 0;
   height: 30vh;
 }

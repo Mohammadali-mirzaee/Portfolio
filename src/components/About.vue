@@ -34,7 +34,7 @@
       </a>
 
       <div class="skill">
-        <h1 class="about">My skills</h1>
+        <h1 class="about">skills</h1>
         <b-row>
           <b-col>
             <vue-ellipse-progress
@@ -163,34 +163,6 @@
           </b-col>
         </b-row>
       </div>
-
-      <!--    <div class="skills">
-        <h1>My skills</h1>
-        <b-container class="bv-example-row">
-          <b-row>
-            <b-col class="vue">
-              <h2>Vue Developer</h2>
-              <p>
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum
-              </p>
-            </b-col>
-            <b-col>
-              <h2>PRODUCT DESIGN</h2>
-              <p>
-                and more recently with desktop publishing software like Aldus
-                PageMaker including versions of Lorem Ipsum Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMak
-              </p>
-            </b-col>
-          </b-row>
-        </b-container>
-      </div> -->
     </main>
   </div>
 </template>
@@ -216,6 +188,7 @@ export default {
       },
     };
   },
+  components: {},
   methods: {
     test() {},
   },
@@ -238,7 +211,6 @@ body {
 .main {
   background: radial-gradient(circle, rgb(7, 7, 7) 0%, rgb(26, 7, 37) 100%);
   color: aliceblue;
-
   min-width: 100vh;
   min-height: 100vh;
   animation: fadebackground 6s infinite;
@@ -293,8 +265,5 @@ a {
   position: relative;
   display: inline-block;
   width: 100vh;
-}
-.vue {
-  background-color: rgb(188, 189, 255);
 }
 </style>
