@@ -9,7 +9,8 @@
     <About v-if="show" />
     <Item />
     <footer class="footer">
-      <div class="logo"></div>
+      <contact />
+      <p>Copyright @ 2021. All Right Reserved</p>
     </footer>
   </div>
 </template>
@@ -19,9 +20,10 @@
 import textanimate from "../components/textanimate.vue";
 import About from "../components/About.vue";
 import Item from "../components/Item";
+import contact from "../components/contact";
 
 export default {
-  components: { textanimate, About, Item },
+  components: { textanimate, About, Item, contact },
   data() {
     return {
       show: true,
@@ -65,9 +67,7 @@ img {
 
 .footer {
   background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(32, 13, 44) 100%);
-
-  padding: 0;
-  height: 30vh;
+  color: aliceblue;
 }
 
 /* h */
