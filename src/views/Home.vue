@@ -1,6 +1,6 @@
 <template>
   <div>
-    <main class="main">
+    <main>
       <!--       <img src="@/assets/bg.jpg" alt="" />
  -->
       <b-card-text><textanimate /> </b-card-text>
@@ -8,9 +8,32 @@
     </main>
     <About v-if="show" />
     <Item />
-    <footer class="footer">
+
+    <footer class="footer-area">
       <contact />
-      <p>Copyright @ 2021. All Right Reserved</p>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 order-2 order-md-1">
+            <div class="copyright">
+              <p>Copyright @ 2021. All Right Reserved</p>
+            </div>
+          </div>
+          <div class="col-md-7 order-1 order-md-2">
+            <div class="social">
+              <a href="https://www.facebook.com" target="_blank"> facebook </a
+              ><a href="https://www.instagram.com" target="_blank">
+                instagram </a
+              ><a href="https://www.linkedin.com" target="_blank">
+                linkedin
+              </a>
+              <a href="https://github.com/Mohammadali-mirzaee" target="_blank">
+                Github
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
   </div>
 </template>
@@ -54,7 +77,7 @@ body {
 img {
   width: 300px;
 }
-.main {
+main {
   font-family: sans-serif;
   min-height: 100vh;
   min-width: 100vh;
@@ -65,10 +88,45 @@ img {
   background-size: cover;
 }
 
-.footer {
+footer {
   background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(32, 13, 44) 100%);
   color: aliceblue;
 }
-
+/* .copyright {
+  height: 100px;
+  width: 100%;
+  background: radial-gradient(
+    circle,
+    rgb(252, 197, 197) 0%,
+    rgb(100, 11, 155) 100%
+  );
+  opacity: 0.2;
+  padding: 50px;
+} */
 /* h */
+.footer-area {
+  color: #bbb;
+  font-size: 14px;
+  padding: 30px 0;
+}
+.social {
+  text-align: right;
+}
+.social a {
+  color: #bbb;
+  line-height: 1;
+  text-decoration: none;
+  padding: 5px;
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+}
+@media (max-width: 768px) {
+  main,
+  footer {
+    flex-direction: column;
+    width: auto;
+    flex: 50%;
+  }
+}
 </style>

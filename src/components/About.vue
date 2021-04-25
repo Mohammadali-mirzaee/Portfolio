@@ -1,6 +1,6 @@
 <template>
   <div>
-    <main class="main">
+    <main>
       <div class="container">
         <h1 class="about">
           About Me
@@ -29,12 +29,12 @@
         </div>
       </div>
 
-      <a class="resume" href="/images/myw3schoolsimage.jpg" download="w3logo">
+      <a class="resume" :href="resume" download="download">
         <span> Download <span style="color:#be73ff">Resume</span> </span>
       </a>
+      <h1 class="about">skills</h1>
 
-      <div class="skill">
-        <h1 class="about">skills</h1>
+      <div class="row">
         <b-row>
           <b-col>
             <vue-ellipse-progress
@@ -158,8 +158,12 @@
               <span slot="legend-value">%</span>
               <p slot="legend-caption">Html & Css</p>
             </vue-ellipse-progress>
-            <img src="https://img.icons8.com/color/70/000000/html-5--v1.png" />
-            <img src="https://img.icons8.com/color/70/000000/css3.png" />
+            <b-col>
+              <img
+                src="https://img.icons8.com/color/70/000000/html-5--v1.png"
+              />
+              <img src="https://img.icons8.com/color/70/000000/css3.png" />
+            </b-col>
           </b-col>
         </b-row>
       </div>
@@ -186,6 +190,7 @@ export default {
           },
         ],
       },
+      resume: require("@/assets/mohammadali.pdf"),
     };
   },
   components: {},
@@ -208,7 +213,7 @@ body {
   min-height: 100vh;
   min-width: 100vh;
 }
-.main {
+main {
   background: radial-gradient(circle, rgb(7, 7, 7) 0%, rgb(26, 7, 37) 100%);
   color: aliceblue;
   min-width: 100vh;
@@ -259,11 +264,35 @@ a {
   text-decoration: none;
 }
 
-.skill {
+.container {
   font-family: "Oswald", sans-serif;
   padding-top: 150px;
   position: relative;
   display: inline-block;
-  width: 100vh;
+  width: 100%;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*  @media (max-width: 768px) {
+  b-row {
+    width: auto;
+  }
+} */
+@media (max-width: 576px) {
+  main,
+  .row,
+  .container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 700px) {
+  main,
+  .row,
+  .container {
+    flex-direction: column;
+  }
 }
 </style>

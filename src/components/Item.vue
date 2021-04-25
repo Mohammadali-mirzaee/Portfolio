@@ -10,7 +10,7 @@
           arrow="always"
         >
           <CarouselCardItem>
-            <b-col class="item">
+            <b-col @click="economy" class="item">
               <b-card
                 :img-src="myeconomy"
                 style="  object-fit: cover; background:transparent;"
@@ -27,7 +27,7 @@
           </CarouselCardItem>
 
           <CarouselCardItem>
-            <b-col class="item">
+            <b-col @click="slid" class="item">
               <b-card
                 :img-src="slider"
                 style="  object-fit: cover; background:transparent;"
@@ -43,7 +43,7 @@
             </b-col>
           </CarouselCardItem>
           <CarouselCardItem>
-            <b-col class="item">
+            <b-col @click="bi" class="item">
               <b-card
                 :img-src="bio"
                 style="  object-fit: cover; background:transparent;"
@@ -78,6 +78,17 @@ export default {
   components: {
     CarouselCard,
     CarouselCardItem,
+  },
+  methods: {
+    economy() {
+      location.href = "https://myeconomy.netlify.app";
+    },
+    slid() {
+      location.href = "https://hopeful-carson-2313ab.netlify.app/";
+    },
+    bi() {
+      location.href = "https://elastic-mirzakhani-30574d.netlify.app/";
+    },
   },
 };
 </script>

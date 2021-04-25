@@ -2,7 +2,7 @@
   <div>
     <main>
       <div class="container ">
-        <h1>Contact Me</h1>
+        <h1 class="contact-me">Contact Me</h1>
         <div class="contact-info__list address">
           <b-icon-house-door-fill></b-icon-house-door-fill>
           <p>Bergkantsvägen 29</p>
@@ -69,6 +69,7 @@ main {
   width: 50%;
   margin: 0 auto;
   padding: 20px;
+  color: #bbb;
 }
 
 .form-contact {
@@ -93,7 +94,6 @@ main {
   color: #fffefe;
   font-size: 18px;
   background-color: #000000;
-
   height: 200px;
   margin-bottom: 20px;
   border-bottom: 1px solid rgb(255, 251, 251);
@@ -122,5 +122,14 @@ main {
 
 .form-contact-button:hover {
   opacity: 1;
+}
+.contact-me {
+  color: rgb(247, 251, 255);
+  font-family: "Oswald", sans-serif;
+}
+@media screen and (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
 }
 </style>

@@ -142,4 +142,11 @@
     left: 0rem;
   }
 }
+@media screen and (max-width: 700px) {
+  #main-intro,
+  .text {
+    width: auto;
+    font-size: 50px;
+  }
+}
 </style>
