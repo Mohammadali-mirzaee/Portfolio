@@ -4,10 +4,13 @@
       <!--       <img src="@/assets/bg.jpg" alt="" />
  -->
       <b-card-text><textanimate /> </b-card-text>
-      <img src="https://media.giphy.com/media/26DoiqmYcxgFICb3G/giphy.gif" />
+      <img
+        class="img-ani"
+        src="https://media.giphy.com/media/26DoiqmYcxgFICb3G/giphy.gif"
+      />
+      <About v-if="show" />
+      <Item />
     </main>
-    <About v-if="show" />
-    <Item />
 
     <footer class="footer-area">
       <contact />
@@ -127,6 +130,7 @@ footer {
     flex-direction: column;
     width: auto;
     flex: 50%;
+    height: 100%;
   }
 }
 </style>

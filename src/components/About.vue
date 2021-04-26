@@ -6,11 +6,9 @@
           About Me
         </h1>
         <p>
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC, making
-          it over 2000 years old. Richard McClintock, a Latin professor at
-          Hampden-Sydney College in Virginia, looked up one of the more obscure
-          Latin words, consectetur, from a Lorem Ipsum
+          HI, I'm Mohammadali Mirzaee I'm residing in this beautiful world. I
+          create websites and mobile apps with great UX and UI design. I'm
+          currently studying frontend developer at It Högskolan in Ghothenberg.
         </p>
         <p class="signatur">
           Mohammadali
@@ -32,9 +30,12 @@
       <a class="resume" :href="resume" download="download">
         <span> Download <span style="color:#be73ff">Resume</span> </span>
       </a>
-      <h1 class="about">skills</h1>
 
       <div class="row">
+        <b-container
+          ><h1>Skills</h1>
+          <img class="code" :src="code" alt="" />
+        </b-container>
         <b-row>
           <b-col>
             <vue-ellipse-progress
@@ -64,7 +65,9 @@
             >
               <span slot="legend-value">%</span>
               <p slot="legend-caption">JavaScript</p> </vue-ellipse-progress
-            ><img src="https://img.icons8.com/color/96/000000/javascript.png"
+            ><img
+              class="icon"
+              src="https://img.icons8.com/color/96/000000/javascript.png"
           /></b-col>
           <b-col>
             <vue-ellipse-progress
@@ -95,7 +98,10 @@
               <span slot="legend-value">%</span>
               <p slot="legend-caption">Vue Js</p>
             </vue-ellipse-progress>
-            <img src="https://img.icons8.com/color/96/000000/vue-js.png" />
+            <img
+              class="icon"
+              src="https://img.icons8.com/color/96/000000/vue-js.png"
+            />
           </b-col>
           <b-col>
             <vue-ellipse-progress
@@ -127,7 +133,10 @@
 
               <p slot="legend-caption">Node Js</p>
             </vue-ellipse-progress>
-            <img src="https://img.icons8.com/color/96/000000/nodejs.png" />
+            <img
+              class="icon"
+              src="https://img.icons8.com/color/96/000000/nodejs.png"
+            />
           </b-col>
           <b-col>
             <vue-ellipse-progress
@@ -156,13 +165,18 @@
               fontSize="2rem"
             >
               <span slot="legend-value">%</span>
+
               <p slot="legend-caption">Html & Css</p>
             </vue-ellipse-progress>
             <b-col>
               <img
-                src="https://img.icons8.com/color/70/000000/html-5--v1.png"
+                class="icon"
+                src="https://img.icons8.com/color/96/000000/html-5--v1.png"
               />
-              <img src="https://img.icons8.com/color/70/000000/css3.png" />
+              <img
+                class="icon"
+                src="https://img.icons8.com/color/96/000000/css3.png"
+              />
             </b-col>
           </b-col>
         </b-row>
@@ -191,6 +205,7 @@ export default {
         ],
       },
       resume: require("@/assets/mohammadali.pdf"),
+      code: require("@/assets/Code.svg"),
     };
   },
   components: {},
@@ -214,11 +229,13 @@ body {
   min-width: 100vh;
 }
 main {
-  background: radial-gradient(circle, rgb(7, 7, 7) 0%, rgb(26, 7, 37) 100%);
+  background: radial-gradient(0.25turn, rgb(7, 7, 7) 0%, rgb(26, 7, 37) 100%);
   color: aliceblue;
   min-width: 100vh;
   min-height: 100vh;
+  padding-top: 50px;
   animation: fadebackground 6s infinite;
+  font-family: "Oswald", sans-serif;
 }
 /* .text {
   font-size: 100px;
@@ -263,18 +280,59 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
+.code {
+  width: 600px;
+}
 
 .container {
   font-family: "Oswald", sans-serif;
-  padding-top: 150px;
-  position: relative;
-  display: inline-block;
   width: 100%;
 }
 .row {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 50px;
+  width: auto;
+}
+.icon:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 /*  @media (max-width: 768px) {
   b-row {
@@ -286,6 +344,9 @@ a {
   .row,
   .container {
     flex-direction: column;
+  }
+  .icon {
+    display: none;
   }
 }
 @media screen and (max-width: 700px) {

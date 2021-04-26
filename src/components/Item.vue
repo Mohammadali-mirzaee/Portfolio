@@ -9,7 +9,7 @@
           type="card"
           arrow="always"
         >
-          <CarouselCardItem>
+          <CarouselCardItem class="item">
             <b-col @click="economy" class="item">
               <b-card
                 :img-src="myeconomy"
@@ -102,10 +102,16 @@ export default {
   align-items: center;
   color: #fff;
   background: linear-gradient(90deg, rgb(18, 34, 65), rgb(67, 21, 85));
+  transition: transform 0.2s;
+}
+.item:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
 }
 .projects {
-  padding-top: 150px;
-  background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(32, 13, 44) 100%);
+  padding-top: 50px;
+  background: radial-gradient(0.25turn, rgb(0, 0, 0) 0%, rgb(32, 13, 44) 100%);
 }
 .project {
   color: aliceblue;

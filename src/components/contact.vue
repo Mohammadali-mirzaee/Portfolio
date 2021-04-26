@@ -66,7 +66,7 @@ main {
   align-items: center;
 }
 .container {
-  width: 50%;
+  width: auto;
   margin: 0 auto;
   padding: 20px;
   color: #bbb;
@@ -81,41 +81,41 @@ main {
   width: 100%;
   color: #fff9f9;
   font-size: 18px;
-  background-color: #000000;
+  background: transparent;
   border: none;
   height: 40px;
   margin-bottom: 20px;
-  border-bottom: 1px solid rgb(255, 250, 250);
   text-indent: 20px;
+  border-color: Transparent;
+  border-bottom: 1px solid;
 }
 
 .form-contact-textarea {
   width: 100%;
   color: #fffefe;
   font-size: 18px;
-  background-color: #000000;
+  background-color: transparent;
   height: 200px;
   margin-bottom: 20px;
-  border-bottom: 1px solid rgb(255, 251, 251);
   text-indent: 20px;
   padding-top: 16px;
   padding-left: 0;
   padding-right: 0;
   font-family: "Arial", Times, serif;
+  border-color: Transparent;
 }
 
 .form-contact-button {
   width: 100%;
   font-size: 18px;
   border-radius: 4px;
-  color: #fff;
+  color: rgb(255, 254, 254);
   height: 40px;
   opacity: 0.8;
   margin-bottom: 20px;
   cursor: pointer;
   display: block;
-  background: linear-gradient(90deg, rgb(45, 85, 167), rgb(111, 25, 145));
-
+  background: linear-gradient(90deg, rgb(97, 149, 253), rgb(206, 83, 255));
   border: none;
   transition: 1s;
 }
@@ -130,6 +130,12 @@ main {
 @media screen and (max-width: 700px) {
   .container {
     flex-direction: column;
+    width: 50vh;
   }
+}
+.container a {
+  text-decoration: none;
+  color: #be73ff;
+  padding: 5px;
 }
 </style>

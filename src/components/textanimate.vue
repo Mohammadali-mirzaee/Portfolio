@@ -31,7 +31,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 .text {
-  font-size: 90px;
+  font-size: 80px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: rgb(255, 255, 255);
 }

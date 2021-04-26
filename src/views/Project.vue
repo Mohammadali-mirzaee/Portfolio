@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="main" v-bind:style="{ backgroundColor: color }">
+    <!--     <div class="main" v-bind:style="{ backgroundColor: color }">
       <div>
         <header>
           <p>change the Theme</p>
@@ -53,12 +53,12 @@
         v-on:click="reload"
         type="button"
       />
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-import another from "../components/another.vue";
+/* import another from "../components/another.vue";
 export default {
   components: { another },
   name: "api-process",
@@ -87,11 +87,11 @@ export default {
         console.log((this.boreds = rsl));
       });
   },
-};
+}; */
 </script>
 
 <style scoped>
-.main {
+/* .main {
   min-height: 70vh;
   margin: 10px 35px;
   font-family: "Oswald", sans-serif;
@@ -106,5 +106,6 @@ export default {
   font-size: 100px;
   color: aliceblue;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
+} */
 </style>
+*/ */

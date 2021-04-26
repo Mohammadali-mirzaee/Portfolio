@@ -6,7 +6,8 @@
       <router-link to="/about"
         ><p :state="false" @click="click" class="router">About</p></router-link
       >
-      <router-link to="/project"><p class="router">Project</p></router-link>
+      <!--       <router-link to="/project"><p class="router">Project</p></router-link>
+ -->
     </Slide>
   </div>
 </template>
