@@ -1,5 +1,5 @@
 # my-portfolio
-# A lot of updates Comming Soon 🛠 
+Desktop 70 % but not available on mobile version yet 🛠 
 ## Project setup
 ```
 npm install
