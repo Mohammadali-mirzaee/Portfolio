@@ -25,9 +25,15 @@
           <div class="col-md-7 order-1 order-md-2">
             <div class="social">
               <a href="https://www.facebook.com" target="_blank"> facebook </a
-              ><a href="https://www.instagram.com" target="_blank">
+              ><a
+                href="https://www.instagram.com/mohammadalimirzaeee/"
+                target="_blank"
+              >
                 instagram </a
-              ><a href="https://www.linkedin.com" target="_blank">
+              ><a
+                href="https://www.linkedin.com/in/mohammadali-mirzaee-4223231b5/"
+                target="_blank"
+              >
                 linkedin
               </a>
               <a href="https://github.com/Mohammadali-mirzaee" target="_blank">

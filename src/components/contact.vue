@@ -135,7 +135,6 @@ main {
 }
 .container a {
   text-decoration: none;
-  color: #be73ff;
   padding: 5px;
 }
 </style>

@@ -15,13 +15,18 @@
         </p>
 
         <div class="social-link">
-          <a href="https://www.facebook.com/" target="_blank">
+          <a
+            href="https://www.instagram.com/mohammadalimirzaeee/"
+            target="_blank"
+          >
             <b-icon-instagram></b-icon-instagram> </a
-          ><a href="https://www.twitter.com/" target="_blank"
+          ><a href="https://www.facebook.com/" target="_blank"
             ><b-icon-facebook></b-icon-facebook></a
-          ><a href="https://www.linked-in.com/" target="_blank"
+          ><a
+            href="https://www.linkedin.com/in/mohammadali-mirzaee-4223231b5/"
+            target="_blank"
             ><b-icon-linkedin></b-icon-linkedin></a
-          ><a href="https://www.instagram.com/" target="_blank"
+          ><a href="https://github.com/Mohammadali-mirzaee" target="_blank"
             ><b-icon-github></b-icon-github
           ></a>
         </div>
@@ -229,7 +234,7 @@ body {
   min-width: 100vh;
 }
 main {
-  background: radial-gradient(0.25turn, rgb(7, 7, 7) 0%, rgb(26, 7, 37) 100%);
+  background: radial-gradient(circle, rgb(7, 7, 7) 0%, rgb(26, 7, 37) 100%);
   color: aliceblue;
   min-width: 100vh;
   min-height: 100vh;
